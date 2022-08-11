@@ -4,17 +4,23 @@ import main.com.adventure.settings.Command;
 import main.com.adventure.settings.CommandConstants;
 
 import java.util.Locale;
-
+import java.util.Scanner;
 public class GameInputProcessor {
 
     /**
      * Asks the user for their next command.
+     *
      * @return the response from the user.
      */
     public String prompt() {
-        System.out.println("Enter your next command:");
-        return "";
+        Scanner input = new Scanner(System.in);
+        System.out.println("Next Command: ");
+        String name = input.nextLine();
+        System.out.println("");
+        input.close();
+        return name;
     }
+
 
     /**
      * Inputs that come into this method represent single action with no object. When building the command, you'll want
@@ -29,9 +35,8 @@ public class GameInputProcessor {
      * @return - the Command object with the proper verb and blank object
      */
     private Command buildSimpleCommand(String input) {
-        return new Command("");
+        return buildCommandWithObject("look");
     }
-
     /**
      * Inputs that come into this method will have an object or objects that the action is acting on. You'll need to
      * include the object parameter as part of the Command object.
@@ -52,8 +57,17 @@ public class GameInputProcessor {
      * @return - the Command object with the proper verb and object
      */
     private Command buildCommandWithObject(String input) {
-        return new Command("", "");
+        String[] arrC = input.split(" ");
+        if (arrC.length == 1) {
+            return new Command(arrC[0], "");
+        } else if (arrC.length >=2) {
+            return new Command (arrC[0], arrC[1]);
+        } else {
+            return new Command("","");
+        }
     }
+
+
 
 
     /** DO NOT CHANGE ANYTHING BELOW THIS LINE. **/
