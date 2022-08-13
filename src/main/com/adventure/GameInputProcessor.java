@@ -35,6 +35,7 @@ public class GameInputProcessor {
      * @return - the Command object with the proper verb and blank object
      */
     private Command buildSimpleCommand(String input) {
+
         return buildCommandWithObject("look");
     }
     /**

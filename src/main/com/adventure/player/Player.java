@@ -43,6 +43,7 @@ public class Player {
      * @return The name of the player
      */
     public String getName() {
+
         return name;
     }
 
@@ -54,6 +55,7 @@ public class Player {
      * @return true if the player's level is enough to open the door.
      */
     public boolean canOpenDoor() {
+
         return (level / 2.0 > 2);
     }
 
