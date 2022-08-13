@@ -98,7 +98,7 @@ public class Player {
      * Sprint 3 Module 2
      * Will increase the players power to the power of the item that is passed in.
      * For example, if the player's power is 1 and the weapon is 5, the player's power is now 5.
-     * @param item - the weapon that will be used to adjust the player's power.
+     * @param item - the weapon that will be used to adjust the player's power..
      */
     public void setWeapon(Weapon item) {
         //TODO Complete this function in Sprint 3 Module 2
