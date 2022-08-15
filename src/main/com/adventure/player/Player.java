@@ -76,7 +76,7 @@ public class Player {
      *
      * @param direction        - the direction the player wishes to go
      * @param isValidDirection - true if the player can move that direction in the game. Otherwise, false.
-     * @return true if the move is executed. Otherwise, false.....
+     * @return true if the move is executed. Otherwise, false.......
      */
     public boolean move(String direction, boolean isValidDirection) {
         if (isValidDirection) {
