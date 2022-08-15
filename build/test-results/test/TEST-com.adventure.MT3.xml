@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.adventure.MT3" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-08-13T19:14:03" hostname="Taylors-Air.lan" time="1.001">
+<testsuite name="com.adventure.MT3" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-08-15T22:57:40" hostname="Taylors-Air.lan" time="0.967">
   <properties/>
-  <testcase name="testPlayerMovementInvalid()" classname="com.adventure.MT3" time="0.105"/>
-  <testcase name="testPlayerMovementEast()" classname="com.adventure.MT3" time="0.006"/>
-  <testcase name="testPlayerMovementWest()" classname="com.adventure.MT3" time="0.005"/>
-  <testcase name="testInvalidMoveInput()" classname="com.adventure.MT3" time="0.826"/>
-  <testcase name="testPrompt2()" classname="com.adventure.MT3" time="0.007"/>
-  <testcase name="checkMoveInputEast()" classname="com.adventure.MT3" time="0.003"/>
-  <testcase name="checkMoveInputWest()" classname="com.adventure.MT3" time="0.002"/>
-  <testcase name="testUseInput()" classname="com.adventure.MT3" time="0.022"/>
-  <testcase name="checkSimpleInput()" classname="com.adventure.MT3" time="0.004"/>
-  <testcase name="testPrompt()" classname="com.adventure.MT3" time="0.006"/>
+  <testcase name="testPlayerMovementInvalid()" classname="com.adventure.MT3" time="0.1"/>
+  <testcase name="testPlayerMovementEast()" classname="com.adventure.MT3" time="0.002"/>
+  <testcase name="testPlayerMovementWest()" classname="com.adventure.MT3" time="0.001"/>
+  <testcase name="testInvalidMoveInput()" classname="com.adventure.MT3" time="0.807"/>
+  <testcase name="testPrompt2()" classname="com.adventure.MT3" time="0.008"/>
+  <testcase name="checkMoveInputEast()" classname="com.adventure.MT3" time="0.004"/>
+  <testcase name="checkMoveInputWest()" classname="com.adventure.MT3" time="0.004"/>
+  <testcase name="testUseInput()" classname="com.adventure.MT3" time="0.02"/>
+  <testcase name="checkSimpleInput()" classname="com.adventure.MT3" time="0.001"/>
+  <testcase name="testPrompt()" classname="com.adventure.MT3" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

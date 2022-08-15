@@ -20,8 +20,6 @@ public class GameInputProcessor {
         input.close();
         return name;
     }
-
-
     /**
      * Inputs that come into this method represent single action with no object. When building the command, you'll want
      * to supply the first word as the verb and leave the objectName blank.
@@ -35,7 +33,6 @@ public class GameInputProcessor {
      * @return - the Command object with the proper verb and blank object
      */
     private Command buildSimpleCommand(String input) {
-
         return buildCommandWithObject("look");
     }
     /**
@@ -61,16 +58,12 @@ public class GameInputProcessor {
         String[] arrC = input.split(" ");
         if (arrC.length == 1) {
             return new Command(arrC[0], "");
-        } else if (arrC.length >=2) {
-            return new Command (arrC[0], arrC[1]);
+        } else if (arrC.length >= 2) {
+            return new Command(arrC[0], arrC[1]);
         } else {
-            return new Command("","");
+            return new Command("", "");
         }
     }
-
-
-
-
     /** DO NOT CHANGE ANYTHING BELOW THIS LINE. **/
 
     /**

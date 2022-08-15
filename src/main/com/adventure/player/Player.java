@@ -1,17 +1,10 @@
 package main.com.adventure.player;
 
-import com.amazonaws.auth.AwsChunkedEncodingInputStream;
-import com.amazonaws.services.dynamodbv2.xspec.S;
 import main.com.adventure.settings.AppSettings;
-import main.com.adventure.world.Direction;
 import main.com.adventure.world.objects.Shovel;
 import main.com.adventure.world.objects.Tangible;
 import main.com.adventure.world.objects.Weapon;
 import main.com.adventure.world.objects.keys.Key;
-import org.apache.http.impl.client.TargetAuthenticationStrategy;
-
-import java.util.Objects;
-import java.util.Scanner;
 
 public class Player {
 
@@ -34,7 +27,6 @@ public class Player {
         this.name = newName;
         System.out.println("Your name is now " + name);
     }
-
     /**
      * Sprint 2 Module 1
      * Retrieves the name of this player. The name of the player should be stored in this file, so we should reference
@@ -43,10 +35,8 @@ public class Player {
      * @return The name of the player
      */
     public String getName() {
-
         return name;
     }
-
     /**
      * Sprint 2 Module 1
      * The canOpenDoor is calculated by taking the player's level and dividing it by 2.
@@ -55,11 +45,8 @@ public class Player {
      * @return true if the player's level is enough to open the door.
      */
     public boolean canOpenDoor() {
-
-        return (level / 2.0 > 2);
+        return level / 2.0 > 2;
     }
-
-
     /**
      * Sprint 2 Module 2
      * The move function takes two parameters: a direction string and an isValidDirection boolean.
@@ -92,8 +79,6 @@ public class Player {
             return false;
         }
     }
-
-
     /**
      * Sprint 3 Module 2
      * Will increase the players power to the power of the item that is passed in.
